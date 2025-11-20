@@ -1,0 +1,144 @@
+.submission-package {
+  background-color: var(--background-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.package-header {
+  margin-bottom: 24px;
+}
+
+.package-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.package-header p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.verification-link-section {
+  margin-bottom: 24px;
+}
+
+.verification-link-section label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.link-input-group {
+  display: flex;
+  gap: 8px;
+}
+
+.verification-url {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-family: 'Courier New', monospace;
+  background-color: var(--background-light);
+  color: var(--text-primary);
+}
+
+.btn-sm {
+  padding: 10px 16px;
+  font-size: 13px;
+}
+
+.help-text {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+
+.submission-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.submission-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: var(--background-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.submission-btn:hover {
+  background-color: var(--background-light);
+  border-color: var(--text-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.btn-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.btn-description {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.certificate-id-box {
+  padding: 16px;
+  background-color: var(--background-light);
+  border-radius: var(--radius-sm);
+}
+
+.certificate-id-box label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.certificate-id {
+  display: block;
+  padding: 12px;
+  background-color: var(--background-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: var(--primary-color);
+  word-break: break-all;
+}
+
+@media (max-width: 768px) {
+  .submission-package {
+    padding: 16px;
+  }
+
+  .link-input-group {
+    flex-direction: column;
+  }
+}

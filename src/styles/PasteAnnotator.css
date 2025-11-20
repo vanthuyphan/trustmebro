@@ -1,0 +1,208 @@
+.paste-annotator {
+  background-color: var(--background-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.annotator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.annotator-header h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.paste-count {
+  font-size: 12px;
+  padding: 4px 10px;
+  background-color: #FFF3CD;
+  color: #856404;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.paste-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.paste-item {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.paste-item.unjustified {
+  border-left: 3px solid #f44336;
+}
+
+.paste-item.justified {
+  border-left: 3px solid #4CAF50;
+}
+
+.paste-summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.paste-summary:hover {
+  background-color: var(--background-light);
+}
+
+.paste-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.paste-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.paste-preview {
+  font-size: 13px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.paste-meta {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.paste-status {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.paste-details {
+  padding: 12px;
+  background-color: var(--background-light);
+  border-top: 1px solid var(--border-color);
+}
+
+.paste-text {
+  margin-bottom: 12px;
+}
+
+.paste-text strong {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.text-preview {
+  font-size: 13px;
+  padding: 10px;
+  background-color: var(--background-white);
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  max-height: 150px;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+
+.annotation-options p {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.type-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.type-btn {
+  padding: 8px 14px;
+  border: 2px solid;
+  background-color: var(--background-white);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.type-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.paste-annotation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.annotation-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  color: white;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.annotation-note {
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 8px;
+  background-color: var(--background-white);
+  border-radius: 4px;
+  border-left: 3px solid var(--primary-color);
+}
+
+.remove-annotation-btn {
+  padding: 6px 12px;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  color: var(--text-secondary);
+  align-self: flex-start;
+  transition: all 0.2s;
+}
+
+.remove-annotation-btn:hover {
+  background-color: #FFE0E0;
+  border-color: #f44336;
+  color: #f44336;
+}
+
+@media (max-width: 768px) {
+  .type-buttons {
+    flex-direction: column;
+  }
+
+  .type-btn {
+    width: 100%;
+  }
+}
